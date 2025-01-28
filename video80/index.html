@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #333;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+
+        }
+        button{
+           font-size: 2rem;
+           box-shadow: 0px 0px 20px aqua;
+           border-radius: 12px;
+           background-color: aqua;
+           padding: 15px 20px;
+           width: 100%;
+           text-align: center;
+
+        }
+        button:hover{
+            box-shadow: 0px 0px 50px aqua;
+        }
+    </style>
+</head>
+<body>
+    <button>Read more</button>
+    <script>
+        // let obj = {
+//     a: 1 , 
+//     b: "Asmit"
+// }:)___________kkfnf
+// console.log(obj)
+
+// let animal = {
+//     eats:true
+// }
+
+// let rabbit = {
+//     jumps:true
+// }
+// rabbit._proto_ = animal;
+
+class Animal {
+    constructor(name){
+        this.name = name
+        console.log("object has maden :)")
+    }
+
+    eats(){
+        console.log("Kha Raha Hun ")
+    } 
+
+
+    jumps(){
+        console.log("khud Raha Hun   ")
+    } 
+}
+
+
+class Lion extends Animal{
+    constructor(name){
+        super(name)
+        console.log("object has maden :)")
+    }
+    eats(){
+        console.log("Kha Raha Hun roar ")
+    } 
+}
+
+
+let a = new Animal("Bunny") 
+console.log(a)
+
+let l = new Lion("Sher ka Beta ")
+console.log(l)
+    </script>
+</body>
+</html>

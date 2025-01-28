@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+  <!-- Navbar -->
+  <nav class="bg-white dark:bg-gray-800 shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-gray-800 dark:text-gray-200">BrandName</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200">Home</a>
+        <a href="#features" class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200">Features</a>
+        <a href="#pricing" class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200">Pricing</a>
+        <a href="#contact" class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200">Contact</a>
+      </div>
+      <button id="theme-toggle" class="bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-md text-gray-800 dark:text-gray-200 md:ml-6">
+        Toggle Theme
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gray-100 dark:bg-gray-900">
+    <div class="container mx-auto px-6 py-16 text-center">
+      <h1 class="text-4xl font-extrabold text-gray-800 dark:text-gray-200 sm:text-5xl">
+        Welcome to <span class="text-indigo-500">BrandName</span>
+      </h1>
+      <p class="mt-6 text-gray-600 dark:text-gray-400 text-lg sm:text-xl">
+        The best solution for your business needs. Create. Innovate. Grow.
+      </p>
+      <div class="mt-8 flex justify-center">
+        <a href="#features" class="bg-indigo-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-600 transition duration-300">
+          Get Started
+        </a>
+        <a href="#pricing" class="ml-4 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-6 py-3 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-600 transition duration-300">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-white dark:bg-gray-800">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 dark:text-gray-200">Features</h2>
+      <p class="mt-4 text-gray-600 dark:text-gray-400">
+        Discover what makes our product unique and powerful.
+      </p>
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-gray-100 dark:bg-gray-900 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+          <div class="text-indigo-500">
+            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3-1.343 3-3S13.657 2 12 2 9 3.343 9 5s1.343 3 3 3zM19 8v13H5V8m14 0H5m4 0h6"></path>
+            </svg>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-gray-800 dark:text-gray-200">Feature 1</h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-400">
+            Enhance productivity with this powerful feature.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-gray-100 dark:bg-gray-900 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+          <div class="text-indigo-500">
+            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m2 4v4m4-4a1 1 0 00-1-1h-1m-4 0a1 1 0 01-1-1m6 1V9a2 2 0 00-2-2H9a2 2 0 00-2 2v9"></path>
+            </svg>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-gray-800 dark:text-gray-200">Feature 2</h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-400">
+            Keep your data secure with advanced encryption.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-gray-100 dark:bg-gray-900 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+          <div class="text-indigo-500">
+            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11m4 4H4a2 2 0 01-2-2v-3a2 2 0 012-2h7a2 2 0 012 2h3a2 2 0 012 2v3a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-gray-800 dark:text-gray-200">Feature 3</h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-400">
+            Collaborate seamlessly with your team.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-900 py-6">
+    <div class="container mx-auto px-6 text-center text-gray-600 dark:text-gray-400">
+      © 2024 BrandName. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle script
+    const themeToggle = document.getElementById("theme-toggle");
+    themeToggle.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark");
+      localStorage.setItem("theme", document.documentElement.classList.contains("dark") ? "dark" : "light");
+    });
+
+    // Set initial theme
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+  </script>
+
+</body>
+
+</html>
+ 

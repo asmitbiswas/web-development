@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Tailwind CSS</title>
+  
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans antialiased">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-gray-700">Tailwind Dashboard</div>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#" class="text-gray-600 hover:text-blue-600">Home</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-blue-600">About</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-blue-600">Contact</a></li>
+        <LI><a href="$"></a></LI>
+      </ul>
+      <button id="mobileMenu" class="md:hidden text-gray-600 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileNav" class="hidden bg-white shadow-md md:hidden">
+    <ul class="space-y-2 px-6 py-4">
+      <li><a href="#" class="block text-gray-600 hover:text-blue-600">Home</a></li>
+      <li><a href="#" class="block text-gray-600 hover:text-blue-600">About</a></li>
+      <li><a href="#" class="block text-gray-600 hover:text-blue-600">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Dashboard Content -->
+  <div class="pt-16">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- Sidebar -->
+        <aside class="hidden md:block col-span-1 bg-white shadow-md rounded-lg p-6">
+          <h2 class="text-lg font-semibold text-gray-700">Menu</h2>
+          <ul class="mt-4 space-y-3">
+            <li><a href="#" class="block text-gray-600 hover:text-blue-600">Dashboard</a></li>
+            <li><a href="#" class="block text-gray-600 hover:text-blue-600">Settings</a></li>
+            <li><a href="#" class="block text-gray-600 hover:text-blue-600">Profile</a></li>
+            <li><a href="#" class="block text-gray-600 hover:text-blue-600">Logout</a></li>
+          </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="col-span-3 bg-white shadow-md rounded-lg p-6">
+          <h1 class="text-2xl font-bold text-gray-700">Welcome to the Dashboard</h1>
+          <p class="mt-2 text-gray-600">This is a responsive, interactive dashboard built with  CSS.</p>
+
+          <!-- Interactive Cards -->
+          <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-blue-50 border-l-4 border-blue-500 shadow-md p-4 rounded-lg hover:scale-105 transition-transform">
+              <h3 class="text-lg font-semibold text-blue-700">Total Users</h3>
+              <p class="text-gray-600 mt-1">1123311</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-green-50 border-l-4 border-green-500 shadow-md p-4 rounded-lg hover:scale-105 transition-transform">
+              <h3 class="text-lg font-semibold text-green-700">Revenue</h3>
+              <p class="text-gray-600 mt-1">$45006444152121</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-red-50 border-l-4 border-red-500 shadow-md p-4 rounded-lg hover:scale-105 transition-transform">
+              <h3 class="text-lg font-semibold text-red-700">Pending Issues</h3>
+              <p class="text-gray-600 mt-1">0</p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileNav = document.getElementById('mobileNav');
+    mobileMenu.addEventListener('click', () => {
+      mobileNav.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>
+
+

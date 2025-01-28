@@ -1,0 +1,76 @@
+kll {
+    /* border: 2px solid firebrick; */
+    /* border-radius: 80px; */
+    border-image: 32%;
+}
+
+img {
+    filter: (230);
+}
+
+.pp {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ll {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    
+}
+
+video {
+    width: 321px;
+     display: flex; 
+    
+}
+
+.pop {
+    border: 3px solid royalblue;
+    
+    
+}
+
+
+
+body {
+    background-color: black;
+    
+}
+
+button {
+    background-color: orange;
+    border-radius: 30%;
+    
+}
+:root{
+    --primary-color: #061872cc;
+    --text-color: white;
+    --secondary-color: #6ea5fccc;
+}
+
+body{
+    background-color: var(--secondary-color);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 12px 0;
+}
+
+ul li{
+    list-style: none;
+    display: inline;
+    padding: 23px;
+    font-weight: bolder;
+    
+}
+
+ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+}
